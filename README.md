@@ -11,6 +11,14 @@ Connaissances avant de commencer:
 
 Structure projet:
 - api: dossier contenant le back-end
+  méthodes:
+    /get/
+        users: renvoie la liste des utilisateurs
+        groups: renvoie la liste des groupes
+    /post/
+        user: créé un utilisateur
+        group: créé un group
+        deleteusers: supprimer une liste d'utilisateurs
 - front: dossier contenant le front-end
   réalisé avec des icones libre de droits
 - init: dossier contenant le script de création de la bdd (schéma + user spécifique à l'application) à utiliser en root
@@ -23,6 +31,7 @@ Toutes les demandes de l'énnoncé ont été réalisées
 Ajouts personnels:
 - reactjs-popup pour les popup modal
 - react-datepicker pour le choix de la date de naissance
+- méthode API POST pour ajouter un groupe pour éviter de faire des inserts à la main
 
 Pistes d'evolutions:
 - vérifier la sécurité des données des formulaires
