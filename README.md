@@ -24,6 +24,7 @@ Structure projet:
 - init: dossier contenant le script de création de la bdd (schéma + user spécifique à l'application) à utiliser en root
 - screenshots: dossier d'illustration du projet
 
+Initialiser la bdd: créer le schéma de base et le user de l'application avec le script du dossier init, puis lancer la commande 'php bin/console doctrine:schema:create' dans le dossier api pour générer les tables
 Lancer le back-end: lancer la commande 'symfony server:start' dans le dossier api (necessite la cli symfony)
 Lancer le front-end: lancer la commande 'npm start' dans le dossier front (necessite NodeJs)
 Toutes les demandes de l'énnoncé ont été réalisées
