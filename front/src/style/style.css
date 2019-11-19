@@ -1,0 +1,215 @@
+/*****************************
+/*****************************
+ BASE
+******************************/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	background: rgb(252,242,228);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*****************************
+/*****************************
+ TOP PART
+******************************/
+#toppart{
+	height: 50px;
+	background: rgb(137,161,19);
+}
+
+#topcontent{
+	margin: 0;
+	padding: 0;
+	color: rgb(255,255,255);
+	background: rgba(255,255,255,0.1);
+	font-weight: bold;
+	font-size: 2em;
+	width: 50%;
+	margin: auto;
+	height: 50px;
+	padding-top: 5px;
+}
+
+#logo {
+	width: 40px;
+}
+
+/*****************************
+/*****************************
+ BODY PART
+******************************/
+#bodypart {
+	color: rgb(137,161,19);
+	background: rgba(255,255,255,0.5);
+	font-weight: bold;
+	width: calc(50% - (30px));
+	height: 50px;
+	margin:auto;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: calc(100vh - (50px));
+}
+
+/******************
+ USERLIST RELATED
+ */
+#userlist{
+	width: 80%;
+	margin: auto;
+}
+
+#userlistctrl1{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 3px;
+}
+
+#userlistctrl2{
+	width: 80%;
+	margin: auto;
+	margin-top: 3px;
+}
+
+/******************
+ GENERAL ASPECT (style for inputs, buttons etc)
+ */
+#button-detail {
+	width: 16px;
+	height: 16px;
+	background: url("../img/user-info-16.png");
+	border: 0px;
+}
+
+#button-delete {
+	width: 16px;
+	height: 16px;
+	background: url("../img/user-delete-16.png");
+	border: 0px;
+}
+
+#button-add {
+	width: 32px;
+	height: 32px;
+	background: url("../img/user-add.png");
+	border: 0px;
+}
+	
+/* ALL INPUT */
+#search-text, #form-lastname, #form-firstname, #form-birthdate, #form-email{
+	background: rgb(252,242,228);
+	border: 1px rgb(137,161,19) solid;
+	color: rgb(137,161,19);
+	height: 13px;
+	width: 140px;
+	text-align: center;
+}
+#form-group{
+	background: rgb(252,242,228);
+	border: 1px rgb(137,161,19) solid;
+	color: rgb(137,161,19);
+	height: 17px;
+	width: 142px;
+}
+
+/* ALL BUTTONS */
+#button-select, #button-delete-selection, #button-chercher, #form-submit{
+	background: rgb(137,161,19);
+	color: rgb(255,255,255);
+	border: 0px;
+}
+#button-delete-selection, #button-chercher{
+	margin-left: 5px;
+}
+
+/* TABLE STYLE */
+thead{
+	background: rgb(137,161,19);
+	color: rgb(255,255,255);
+}
+#userlist tbody tr:nth-child(even) {
+	background: rgba(0,0,0,0.05);
+}
+#userlist tbody tr:nth-child(odd) {
+	background: rgba(0,0,0,0.1);
+}
+.popup-content tbody tr:nth-child(even), .popup-content tbody tr:nth-child(odd) {
+	background: none !important;
+}
+
+/******************
+ USER DETAILS POPUP RELATED
+ */
+.popup-content {
+	width: 400px !important;
+}
+.detail-popup-header{
+	height: 45px;
+	padding-top: 5px;
+	background: rgb(137,161,19);
+	color: rgb(255,255,255);
+	font-size: 2em;
+}
+.detail-popup-header td{
+	margin-left: 10px;
+	display: inline-block;
+}
+.detail-popup-content{
+	font-size: 1.4em;
+}
+
+/******************
+ DATEPICKER STYLE
+ */
+.react-datepicker{
+	border: 1px solid rgb(137,161,19) !important;
+}
+.react-datepicker__triangle, .react-datepicker__navigation--years-upcoming {
+	border-bottom-color: rgb(137,161,19) !important;
+}
+.react-datepicker__navigation--years-previous{
+	border-top-color: rgb(137,161,19) !important;
+}
+.react-datepicker__navigation--next{
+	border-left-color: rgb(255,255,255) !important;
+}
+.react-datepicker__navigation--previous{
+	border-right-color: rgb(255,255,255) !important;
+}
+.react-datepicker__year-read-view--down-arrow{
+	border-top-color: rgb(255,255,255) !important;
+}
+.react-datepicker__header {
+	background: rgb(137,161,19) !important;
+}
+.react-datepicker__current-month, .react-datepicker__day-name{
+	color: rgb(255,255,255) !important;
+}
+.react-datepicker__month-container, .react-datepicker__year-dropdown{
+	background: rgb(252,242,228) !important;
+}
+.react-datepicker__day, .react-datepicker__year-option{
+	color: rgb(137,161,19) !important;
+}
+.react-datepicker__day--today{
+	background: rgba(255,255,255,0.5)!important;
+	border: 1px solid rgba(137,161,19,0.5) !important;
+}
+.react-datepicker__day--selected{
+	background: rgb(137,161,19) !important;
+	color: rgb(255,255,255) !important;
+}
+.react-datepicker__year-read-view--selected-year{
+	color: rgb(255,255,255) !important;
+}
+	
+	
